@@ -4,10 +4,6 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install --root-user-action=ignore requests
 
-RUN python3 -m venv venv
-
-RUN source venv/bin/activate
-
 COPY requirements.txt .
 
 RUN pip3 install -r /requirements.txt --no-cache-dir
