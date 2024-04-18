@@ -1,6 +1,8 @@
 FROM python:3.10.12-slim
 
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
+
+RUN pip3 install --root-user-action=ignore requests
 
 RUN python3 -m venv venv
 
